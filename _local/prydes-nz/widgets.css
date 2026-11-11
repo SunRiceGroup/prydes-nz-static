@@ -1,0 +1,129 @@
+#prydes-quiz {
+  display: block;
+  width: 100%;
+  min-height: 260px;
+  border: 0;
+}
+
+#storemapper {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+  font: 15px/1.45 Arial, sans-serif;
+  color: #333;
+}
+#storemapper .stockists-filter {
+  padding: 12px;
+  background: #f5f5f5;
+  border: 1px solid #d8d8d8;
+  border-bottom: 0;
+}
+#storemapper label { display: block; margin-bottom: 6px; }
+#storemapper .stockists-controls { display: flex; flex-wrap: wrap; gap: 6px; }
+#storemapper button, #storemapper input { font: inherit; }
+#storemapper input {
+  box-sizing: border-box;
+  min-width: 160px;
+  flex: 1 1 160px;
+  padding: 9px 10px;
+  border: 1px solid #bbb;
+}
+#storemapper button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #262626;
+  cursor: pointer;
+}
+#storemapper .stockists-submit {
+  background: #1d4288;
+  border-color: #1d4288;
+  color: #fff;
+}
+#storemapper button:hover { box-shadow: inset 0 0 0 1px #1d4288; }
+#storemapper button:focus-visible, #storemapper input:focus-visible {
+  outline: 2px solid #1d4288;
+  outline-offset: 2px;
+}
+#storemapper .stockists-columns {
+  display: grid;
+  grid-template-columns: minmax(240px, 35%) minmax(0, 1fr);
+  grid-template-areas: "list map";
+  min-height: 470px;
+  border: 1px solid #d8d8d8;
+}
+#storemapper .stockists-map { position: relative; grid-area: map; overflow: hidden; background: #dcecf2; }
+#storemapper .stockists-map svg { position: absolute; width: 100%; height: 100%; cursor: grab; touch-action: pan-y; }
+#storemapper .stockists-map svg[data-dragging] { cursor: grabbing; }
+#storemapper .stockists-outline { fill: #e9eddf; stroke: #96a99a; stroke-width: 1; vector-effect: non-scaling-stroke; }
+#storemapper .stockists-map circle { fill: #1d4288; stroke: #fff; stroke-width: 1.2; cursor: pointer; }
+#storemapper .stockists-map circle[data-active] { fill: #a0253f; }
+#storemapper .stockists-map text { fill: #395b69; font-size: 13px; text-anchor: middle; pointer-events: none; }
+#storemapper .stockists-list {
+  grid-area: list;
+  box-sizing: border-box;
+  max-height: 470px;
+  position: relative;
+  overflow-y: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#storemapper .stockists-list > li { border-bottom: 1px solid #dedede; padding: 10px 12px; }
+#storemapper .stockists-list > li[data-active] { background: #edf2fa; }
+#storemapper .stockists-list h3 { margin: 0 0 5px; font: 700 15px/1.3 Arial, sans-serif; color: #1d4288; }
+#storemapper .stockists-list p { margin: 0 0 5px; }
+#storemapper .stockists-links { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+#storemapper .stockists-links a { color: #1d4288; text-decoration: underline; }
+#storemapper .stockists-links button { padding: 2px 6px; }
+#storemapper .stockists-status { margin: 5px 0 0; font-size: 13px; }
+#storemapper .stockists-zoom { position: absolute; right: 10px; top: 10px; display: grid; gap: 3px; }
+#storemapper .stockists-zoom button { padding: 3px 7px; }
+#storemapper .stockists-map small {
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+  font-size: 10px;
+  color: #294555;
+}
+@media (max-width: 640px) {
+  #storemapper .stockists-columns {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "map" "list";
+    min-height: auto;
+  }
+  #storemapper .stockists-map { min-height: 360px; }
+  #storemapper .stockists-list { max-height: 350px; }
+}
+
+.prydes-contact-map {
+  position: relative;
+  display: block;
+  aspect-ratio: 100 / 28.4515;
+  min-height: 108px;
+  overflow: hidden;
+  background: #dcecf2;
+  color: #1d4288;
+}
+.prydes-contact-map svg { position: absolute; width: 100%; height: 100%; }
+.prydes-contact-map path { fill: #e9eddf; stroke: #96a99a; stroke-width: 1; vector-effect: non-scaling-stroke; }
+.prydes-contact-map circle { fill: #1d4288; stroke: #fff; stroke-width: 1; }
+.prydes-contact-map text { fill: #243d66; font: 6px Arial, sans-serif; }
+.prydes-contact-map span {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  padding: 5px 8px;
+  background: #fff;
+  color: #1d4288;
+  font: 13px/1.4 Arial, sans-serif;
+  text-decoration: underline;
+}
+.prydes-contact-map small {
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+  color: #294555;
+  font: 10px Arial, sans-serif;
+}

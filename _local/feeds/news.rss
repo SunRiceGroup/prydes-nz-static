@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>News - Prydes EasiFeed New Zealand</title>
+    <link>https://www.prydes.co.nz/news/</link>
+    <description></description>
+    <language>en-NZ</language>
+    <lastBuildDate>Wed, 17 Jun 2015 04:48:10 +0000</lastBuildDate>
+    <atom:link href="https://www.prydes.co.nz/_local/feeds/news.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Test News Item 2</title>
+      <link>https://www.prydes.co.nz/news/2015/6/17/test-news-item-2/</link>
+      <guid isPermaLink="false">53a8dd07e4b0243829f2a32a:53a8df74e4b06641168a5b4a:5580fbe7e4b0b52be6935140</guid>
+      <pubDate>Wed, 17 Jun 2015 04:48:10 +0000</pubDate>
+      <dc:creator>Llama Blue</dc:creator>
+      <description>This is a NZ test news item only</description>
+    </item>
+    <item>
+      <title>Test News Item 1</title>
+      <link>https://www.prydes.co.nz/news/2015/6/17/test-news-item-1/</link>
+      <guid isPermaLink="false">53a8dd07e4b0243829f2a32a:53a8df74e4b06641168a5b4a:5580fbabe4b0b52be693508a</guid>
+      <pubDate>Wed, 17 Jun 2015 04:47:25 +0000</pubDate>
+      <dc:creator>Llama Blue</dc:creator>
+      <description>This is a NZ site test news item only</description>
+    </item>
+  </channel>
+</rss>

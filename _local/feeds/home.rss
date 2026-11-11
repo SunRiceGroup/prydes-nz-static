@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Prydes EasiFeed New Zealand</title>
+    <link>https://www.prydes.co.nz/</link>
+    <description></description>
+    <language>en-NZ</language>
+    <lastBuildDate>Tue, 13 Mar 2018 08:34:31 +0000</lastBuildDate>
+    <atom:link href="https://www.prydes.co.nz/_local/feeds/home.rss" rel="self" type="application/rss+xml"/>
+  </channel>
+</rss>
